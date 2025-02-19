@@ -1,5 +1,5 @@
 const express = require("express");
-const userData = require("../models/alert");
+const userData = require("../models/alerts");
 require("dotenv").config();
 
 const router = express.Router();

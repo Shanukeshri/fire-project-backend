@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Replace 'YourModel' with the actual name of your Mongoose model
-const YourModel = require('./models/user'); // Adjust the path to your model file
+const YourModel = require('./models/login'); // Adjust the path to your model file
 
 // Replace 'your_database_url' with your actual MongoDB connection string
 const dbURI = 'mongodb://localhost:27017/authDB';
