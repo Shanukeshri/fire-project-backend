@@ -16,10 +16,10 @@ app.use(cors()); // Enable CORS
 connectDB();
 
 // Define Routes
-app.use("/api/auth", authRoutes);
-app.use("/api", userRoutes);
-app.use("/api", alertRoutes);
-app.use("/api", userDataRoutes);
+app.use(authRoutes);
+app.use(userRoutes);
+app.use("/api" , alertRoutes);
+app.use(userDataRoutes);
 // Start Server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
